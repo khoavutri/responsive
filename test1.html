@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The First</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <style>
+            * {
+                letter-spacing: 2px;
+            }
+           * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+             }
+
+            .grid {
+                 width: 100%;
+                display: block;
+                padding: 0;
+                margin-right: -8px;
+                }
+
+            .grid .wide {
+                margin: 0 auto;
+                }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col {
+                margin: 4px;
+            }
+
+            .l-3 {
+                flex: 0 0 calc(25% - 8px);
+                max-width: calc(25% - 8px);
+            }
+
+/*tabletl m*/
+            @media (min-width: 740px) and (max-width: 1023px) {
+                .iiii{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .m-6 {
+                    flex: 0 0 calc(50% - 8px);
+                    max-width: calc(50% - 8px);
+                }
+            }
+/*<tablet c*/
+            @media (max-width: 740px) {
+                .c-12 {
+                    flex: 0 0 calc(100% - 8px);
+                    max-width: calc(100% - 8px);
+                }
+            }
+
+            .header {
+                height: 55px;
+                width: 100%;
+                position: fixed;
+                background-color: white;
+                font-family: sans-serif;
+                box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+                display: flex;
+                text-align: center;
+                align-items: center;
+            }
+            .i:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+            .i {
+                padding: 10px 20px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .header_2 {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+            }
+            .banner_1 {
+                background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+                aspect-ratio: 16/9;
+                width: 100vw;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-position: center;
+            }
+            .content {
+                margin: 70px 20px 10px;
+            }
+            .custom-hr {
+                border: none;
+                border-top: 1px solid #f1f1f1;
+                margin: 10px 0;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 740px) {
+                .header_2 {
+                    display: none;
+                }
+                .mobile-none {
+                    display: none;
+                }
+            }
+            .project {
+            }
+            .project_icon {
+                width: 100%;
+                aspect-ratio: 16/9;
+            }
+            .votri {
+                display: flex;
+                background-color: black;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                width: 140px;
+                height: 40px;
+                font-size: 12px;
+            }
+            .ioi:hover{
+                background-color: rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+            }
+            .send{
+                margin-top: 15px;
+                width: 100%;
+                height: 40px;
+                padding-left: 10px;
+            }
+            .iii:hover{
+                background-color: #f1f1f1 !important;
+                cursor: pointer;
+                color: black !important;
+            }
+            .xong{
+                background-color: black;
+                color: white;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="i" style="margin-left: 20px">
+                <a href="#">
+                    <span style="font-weight: bold">BR</span>
+                    <span>Architect</span>
+                </a>
+            </div>
+            <div class="header_2">
+                <div class="i">
+                    <a href="#p1">
+                        <span>Project</span>
+                    </a>
+                </div>
+                <div class="i">
+                    <a href="#p2">
+                        <span>About</span>
+                    </a>
+                </div>
+                <div class="i" style="margin-right: 20px">
+                    <a href="#p3">
+                        <span>Contacts</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner_1" style="color: white; letter-spacing: 5px">
+            <div style="font-size: 40px; margin-top: 90px" class="iiii">
+                <span style="background-color: rgba(0, 0, 0, 0.7); font-weight: 700; padding: 15px">BR</span>
+                <span class="mobile-none"> Architects</span>
+            </div>
+        </div>
+        <div class="content" id="p1">
+            <div >
+                <span style="font-size: 30px;margin-left: 16px;" >Projects</span>
+                <hr class="custom-hr" />
+            </div>
+
+            <div class="grid" style="width: 100% !important;margin:0 16px ;">
+                <div class="wide row">
+                    <div
+                        class="project_icon l-3 m-6 c-12 col"
+                        style="background-image: url('https://www.w3schools.com/w3images/house5.jpg')"
+                    >
+                        <div class="votri">Summer House</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house2.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Brick House</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house3.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Renovated</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house4.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Barn House</div>
+                    </div>
+
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house2.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Summer House</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house5.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Brick House</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house4.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Renovated</div>
+                    </div>
+                    <div
+                        style="background-image: url('https://www.w3schools.com/w3images/house3.jpg')"
+                        class="project_icon l-3 m-6 c-12 col"
+                    >
+                        <div class="votri">Barn House</div>
+                    </div>
+                </div>
+            </div>
+            <div id="p2" style="margin-top: 50px;margin-left: 16px;margin-right: 16px;">
+                <span style="font-size: 30px">About</span>
+                <hr class="custom-hr" />
+            </div>
+            <p style="margin-top: -10px; margin-bottom: 20px;margin-left: 16px;margin-right: 16px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+            </p>
+              <div class="content">
+            <div>
+                <span style="font-size: 30px">Projects</span>
+                <hr class="custom-hr" />
+            </div>
+
+            <div class="grid" style="width: 100% !important">
+                <div class="wide row">
+                    <div
+                        class="l-3 m-6 c-12 col"
+                    >
+                        <img class="project_icon" src="https://www.w3schools.com/w3images/team2.jpg" alt="1">
+                        <h3 style="margin-top: 10px;">John Doe</h3>
+                        <p style="margin-top: 10px;">CEO & Founder</p>
+                        <p style="margin-top: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <button style="width: 100%;height: 40px;border: none;margin-top: 20px;" class="ioi">Contact</button>
+                    </div>
+                    <div
+                        class="l-3 m-6 c-12 col"
+                    >
+                        <img class="project_icon" src="https://www.w3schools.com/w3images/team1.jpg" alt="2">
+                        <h3 style="margin-top: 10px;">Jane Doe</h3>
+                        <p style="margin-top: 10px;">CEO & Founder</p>
+                        <p style="margin-top: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <button style="width: 100%;height: 40px;border: none;margin-top: 20px;" class="ioi">Contact</button>
+                    </div>
+                    <div
+             
+                        class="l-3 m-6 c-12 col"
+                    >
+                        <img class="project_icon" src="https://www.w3schools.com/w3images/team3.jpg" alt="3">
+                        <h3 style="margin-top: 10px;">Mike Ross</h3>
+                        <p style="margin-top: 10px;">CEO & Founder</p>
+                        <p style="margin-top: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <button style="width: 100%;height: 40px;border: none;margin-top: 20px;" class="ioi">Contact</button>
+                    </div>
+                    <div
+                        
+                        class="l-3 m-6 c-12 col"
+                    >
+                        <img class="project_icon" src="https://www.w3schools.com/w3images/team4.jpg" alt="4">
+                        <h3 style="margin-top: 10px;">Dan Star</h3>
+                        <p style="margin-top: 10px;">CEO & Founder</p>
+                        <p style="margin-top: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <button style="width: 100%;height: 40px;border: none;margin-top: 20px;" class="ioi">Contact</button>
+                    </div>  
+                </div>
+            </div>
+            <div id="p3" style="margin-top: 50px">
+                <span style="font-size: 30px">Contact</span>
+                <hr class="custom-hr" />
+            </div>
+            <p style="margin-top: 20px;margin-bottom: 15px;">Lets get in touch and talk about your next project.</p>
+            <div>
+                <input type="text" class="send" placeholder="Name"/>
+                <input type="text" class="send" placeholder="Email"/>
+                <input type="text" class="send" placeholder="Subject"/>
+                <input type="text" class="send" placeholder="Comment"/>
+                <button style="margin-top: 20px;margin-bottom: 20px;padding: 12px;background-color: black;color: white;border: none;" class="iii">SEND MESSAGE</button>
+            </div>
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="a" style="width: 100%; height: auto" />
+        </div>
+        <div class="xong">
+            <span>Powered by&nbsp;</span>
+            <a href="#" style="color: white;text-decoration: underline 0.1px;">khoa</a>
+        </div>
+    </body>
+</html>
